@@ -1,5 +1,5 @@
 ;; =============================================
-;; Graph Representation and Edge Structure
+;; Graph Representation and Edge Structure.
 ;; =============================================
 
 ;; Graph: map from node to a vector of edges (node-weight pairs)
