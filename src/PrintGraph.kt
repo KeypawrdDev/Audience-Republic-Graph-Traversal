@@ -1,3 +1,5 @@
+
+
 fun printGraph(graph: Graph) {
     println("📌 Random Graph (Adjacency List with Weights):\n")
     graph.forEach { (node, edges) ->
