@@ -1,4 +1,3 @@
-
 fun main(args: Array<String>) {
     // Simple CLI argument parsing
     if (args.size < 4) {
@@ -34,6 +33,13 @@ fun main(args: Array<String>) {
 
     println("\n✅ Radius of the graph: ${if (graphRadius == Int.MAX_VALUE) "∞" else graphRadius}")
     println("✅ Diameter of the graph: ${if (graphDiameter == Int.MAX_VALUE) "∞" else graphDiameter}")
+
+    // 🔎 Print eccentricity of ALL nodes (for verification)
+    println("\n🔎 Eccentricity of each node:")
+    randomGraph.keys.forEach { node ->
+        val ecc = eccentricity(randomGraph, node)
+        println("Eccentricity of node $node: ${if (ecc == Int.MAX_VALUE) "∞" else ecc}")
+    }
 
     // Randomly select 2 nodes for shortest path
     val nodes = randomGraph.keys.toList()
