@@ -123,9 +123,9 @@ graph -N 6 -S 8
   :4 []
 }
 
-✅ Radius: 19
-✅ Diameter: 34
+✅ Radius: 2
+✅ Diameter: 4
 
-🔎 Shortest path from node 1 to node 6: [1, 3, 6] with total weight 21
-🔎 Eccentricity of node 3: 19
+🔎 Shortest path from node 1 to node 4: [1, 3, 4] with total path weight: 4
+🔎 Eccentricity of node 3: 2
 ```
